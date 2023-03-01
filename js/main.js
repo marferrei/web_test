@@ -2,7 +2,7 @@ function login(){
 	var passw="aberroncho";
 
 	if(document.form.password.value==passw){
-		window.location = "index.html";
+		window.location = "main.html";
 	}
 }
 
