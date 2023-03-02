@@ -4,6 +4,9 @@ function login(){
 	if(document.form.password.value==passw){
 		window.location = "main.html";
 	}
+	else {
+		alert("Contraseña Errónea");
+	}
 }
 
 (function ($) {
