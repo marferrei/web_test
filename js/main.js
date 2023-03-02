@@ -123,12 +123,12 @@
 })(jQuery);
 
 function login(){
-	var passw="aberroncho";
-
-	if(document.form.password.value==passw){
+	var code = document.getElementById("codigo").value;
+	
+	if(code == "aberroncho"){
 		window.location = "main.html";
 	}
 	else {
-		alert("Contraseña Errónea");
+		alert("Código Errónea");
 	}
 }
