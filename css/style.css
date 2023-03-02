@@ -9253,6 +9253,11 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
+.text-golden {
+	color: #E47A2E;
+}
+
+}
 .text-white {
   color: #fff !important;
 }
