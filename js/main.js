@@ -1,14 +1,3 @@
-function login(){
-	var passw="aberroncho";
-
-	if(document.form.password.value==passw){
-		window.location = "main.html";
-	}
-	else {
-		alert("Contraseña Errónea");
-	}
-}
-
 (function ($) {
     "use strict";
 
@@ -133,3 +122,13 @@ function login(){
 	*/
 })(jQuery);
 
+function login(){
+	var passw="aberroncho";
+
+	if(document.form.password.value==passw){
+		window.location = "main.html";
+	}
+	else {
+		alert("Contraseña Errónea");
+	}
+}
