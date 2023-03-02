@@ -129,6 +129,6 @@ function login(){
 		window.location = "main.html";
 	}
 	else {
-		alert("Código Errónea");
+		alert("Código Erróneo");
 	}
 }
