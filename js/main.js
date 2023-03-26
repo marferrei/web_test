@@ -2,12 +2,8 @@
     "use strict";
 
     // Navbar on scrolling
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $('.navbar').fadeIn('slow').css('display', 'flex');
-        } else {
-            $('.navbar').fadeOut('slow').css('display', 'none');
-        }
+    $(window).scrollTop(function () {
+        $('.navbar').fadeIn('slow').css('display', 'flex');
     });
 
 
@@ -28,24 +24,6 @@
     });
 
 
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
-
-
     // Scroll to Bottom
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -54,7 +32,6 @@
             $('.scroll-to-bottom').fadeIn('slow');
         }
     });
-
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -125,7 +102,7 @@
 function login(){
 	var code = document.getElementById("codigo").value;
 	
-	if(code == "010923"){
+	if(code == 010923){
 		window.location = "main.html";
 	}
 	else {
