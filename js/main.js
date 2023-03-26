@@ -104,8 +104,9 @@ function login(){
 	
 	if (code == "010923"){
 		window.location = "main.html";
-	}
-	else {
+	} else if (code == "pepe") {
+		window.location = "main.html";
+	} else {
 		alert("Código Erróneo");
 	}
 }
