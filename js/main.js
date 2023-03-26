@@ -125,7 +125,7 @@
 function login(){
 	var code = document.getElementById("codigo").value;
 	
-	if(code == "aberroncho"){
+	if(code == "010923"){
 		window.location = "main.html";
 	}
 	else {
